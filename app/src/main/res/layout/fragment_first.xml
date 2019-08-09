@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".firstfragment.FirstFragment"
+    android:background="@android:color/darker_gray">
+    <LinearLayout
+        android:background="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="Name of card?"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:id="@+id/edit_query"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <ImageButton
+
+
+            android:id="@+id/search_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_launcher_foreground"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <!--TextView and Button displayed in First Fragment -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ListView
+            android:id="@+id/list_view_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@android:color/black">
+        </ListView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

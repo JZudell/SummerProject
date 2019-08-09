@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/add_collection_list"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Add List"
+        android:textSize="20dp"
+        android:gravity="center"
+        />
+    <ListView
+        android:layout_below="@+id/add_collection_list"
+        android:background="@android:color/transparent"
+        android:id="@+id/lv_tabs"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"/>
+
+    <com.expanse.computeraccount.abracardabra20.thirdfragment.VerticalViewPager
+        android:layout_toRightOf="@id/lv_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vertical_viewPager"/>
+
+
+</RelativeLayout>

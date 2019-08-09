@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity"
+    android:background="@android:color/holo_orange_dark">
+
+    <!--TextView and Button displayed in First Fragment -->
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_alignParentTop="true"
+                android:id="@+id/add_card_trade_left"
+                android:text="Add Card"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:background="@drawable/list_background_click"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="10"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:orientation="vertical"
+                android:id="@+id/trade_layout_left"
+                android:background="@android:color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/trade_list_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+                <TextView
+                    android:textSize="25sp"
+                    android:textAlignment="center"
+                    android:background="@android:color/black"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/total_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_alignParentTop="true"
+                android:id="@+id/add_card_trade_right"
+                android:padding="10dp"
+                android:text="Add Card"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:background="@drawable/list_background_click"
+                android:shadowColor="@android:color/black"
+                android:shadowRadius="10"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+
+                android:orientation="vertical"
+                android:id="@+id/trade_layout_right"
+                android:background="@color/DarkGrey"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/trade_list_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+                <TextView
+                    android:textSize="25sp"
+                    android:background="@android:color/black"
+                    android:textAlignment="center"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/total_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+
+
+
+
+</LinearLayout>
